@@ -56,7 +56,7 @@ type Army struct {
 	Id             		int    		`xorm:"id pk autoincr"`
 	RId            		int    		`xorm:"rid"`
 	CityId         		int    		`xorm:"cityId"`
-	Order          		int8   		`xorm:"a_order"`
+	Order          		int8   		`xorm:"order"`
 	Generals       		string 		`xorm:"generals"`
 	Soldiers       		string 		`xorm:"soldiers"`
 	ConscriptTimes 		string 		`xorm:"conscript_times"`	//征兵结束时间，json数组
@@ -79,7 +79,7 @@ type Army struct {
 }
 
 func (a *Army) TableName() string {
-	return "army"
+	return "tb_army_1"
 }
 //执行update操作之前进行的操作
 func (a *Army) BeforeUpdate() {

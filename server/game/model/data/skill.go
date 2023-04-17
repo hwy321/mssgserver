@@ -39,7 +39,7 @@ func NewSkill(rid int, cfgId int) *Skill{
 }
 
 func (s *Skill) TableName() string {
-	return "skill"
+	return "tb_skill_1"
 }
 
 func (s *Skill) ToModel() interface{}{

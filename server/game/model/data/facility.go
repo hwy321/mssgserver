@@ -66,7 +66,7 @@ type CityFacility struct {
 }
 
 func (c *CityFacility) TableName() string {
-	return "city_facility"
+	return "tb_city_facility_1"
 }
 
 func (c *CityFacility) Facility() []Facility {

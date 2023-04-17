@@ -77,7 +77,7 @@ type General struct {
 }
 
 func (g *General) TableName() string {
-	return "general"
+	return "tb_general_1"
 }
 
 

@@ -54,7 +54,7 @@ type WarReport struct {
 }
 
 func (w *WarReport) TableName() string {
-	return "war_report"
+	return "tb_war_report_1"
 }
 
 func (w *WarReport) ToModel() interface{}{
